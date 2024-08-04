@@ -11,3 +11,4 @@ services:
       - "18000:8080"
     volumes:
       - ./images:/images
+      - ./python_codes:/python_codes
