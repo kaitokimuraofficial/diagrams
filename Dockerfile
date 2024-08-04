@@ -9,6 +9,7 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /app
 
 COPY scripts/init.sh /app/scripts/init.sh
+COPY requirements.txt /app/requirements.txt
 
 RUN chmod +x /app/scripts/init.sh
 

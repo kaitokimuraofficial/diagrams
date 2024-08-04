@@ -1,0 +1,6 @@
+# Ignore dotfiles
+.DS_Store
+.vs_code
+
+# Ruff
+.ruff_cache

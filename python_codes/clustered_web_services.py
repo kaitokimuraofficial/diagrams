@@ -9,9 +9,7 @@ with Diagram("Clustered Web Services", show=False):
     lb = ELB("lb")
 
     with Cluster("Services"):
-        svc_group = [ECS("web1"),
-                     ECS("web2"),
-                     ECS("web3")]
+        svc_group = [ECS("web1"), ECS("web2"), ECS("web3")]
 
     with Cluster("DB Cluster"):
         db_primary = RDS("userdb")
